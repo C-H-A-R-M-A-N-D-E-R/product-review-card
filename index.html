@@ -12,7 +12,10 @@
 <body>
 
   <main class="card">
-    <div class="image-section"></div>
+    <picture>
+      <source srcset="./images/image-product-desktop.jpg" media="(min-width: 575px)">
+      <img src="./images/image-product-mobile.jpg" alt="Product">
+    </picture>
     <div class="text-section">
       <p class="perfume-text gray">PERFUME</p>
       <h1 class="title">Gabrielle Essence Eau De Parfum</h1>
@@ -20,12 +23,14 @@
         Perfumer-Creator for the House of CHANEL.</p>
       <div class="price-container">
         <p class="current-price">$149.99</p>
-        <p class="previous-price gray">$169.99</p>
+        <del class="gray">
+          <p>$169.99</p>
+        </del>
       </div>
-      <a href="#" class="button">
+      <button href="#" class="cart-button">
         <img src="./images/icon-cart.svg" alt="Cart">
         <p>Add to Cart</p>
-      </a>
+      </button>
     </div>
   </main>
 
